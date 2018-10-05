@@ -14,7 +14,7 @@ def getGithubInfo():
 				with urllib.request.urlopen(commitsLink) as commitUrl:
 					commitsData = json.loads(commitUrl.read().decode())
 					#print(len(commitsData))
-					print("Repo: " + item.get("name").strip('"') + " Number of commits: " + str(len(commitsData)))
+					#print("Repo: " + item.get("name").strip('"') + " Number of commits: " + str(len(commitsData)))
 			except:
 				time.sleep(5)
 	return repos
