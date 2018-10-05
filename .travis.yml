@@ -4,5 +4,8 @@ python:
 install:
   - pip install requests
 # command to run tests
+branches:
+  only:
+    HW05a_Mocking
 script:
-  - python hw4.py < testing.txt
+  - python -m unittest < testing.txt
