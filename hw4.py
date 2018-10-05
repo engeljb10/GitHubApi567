@@ -17,7 +17,7 @@ def getGithubInfo():
 					print("Repo: " + item.get("name").strip('"') + " Number of commits: " + str(len(commitsData)))
 			except:
 				time.sleep(5)
-
+	return repos
 
 try:
 	username = input("Github username: ")
